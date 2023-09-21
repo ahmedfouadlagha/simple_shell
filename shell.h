@@ -35,16 +35,16 @@ typedef struct map
 } function_map;
 
 extern char **environ;
-extern char **line;
+extern char *line;
 extern char **commands;
-extern char **shell_name;
+extern char *shell_name;
 extern int status;
 
 /*helpers*/
 void print(char *, int);
 char **tokenizer(char *, char *);
 void remove_newline(char *);
-int strlen(char *);
+int _strlen(char *);
 void _strcpy(char *, char *);
 
 /*helpers2*/
@@ -73,7 +73,8 @@ void env(char **);
 void quit(char **);
 
 /*main*/
-void non_interactive(void);
-void initializer(char **current_command, int type_command);
+extern void non_interactive(void);
+extern void initializer(char **current_command, int type_command);
 
 #endif /*SHELL_H*/
+
