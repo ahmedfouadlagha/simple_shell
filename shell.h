@@ -13,7 +13,7 @@
 #include <signal.h>
 
 
-/*constants*/
+/*constant*/
 #define EXTERNAL_COMMAND 1
 #define INTERNAL_COMMAND 2
 #define PATH_COMMAND 3
